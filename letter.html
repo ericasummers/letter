@@ -10,28 +10,41 @@
   </head>
   <body>
     <div class="container">
-      <h1>To Whom It May Concern:</h1>
-      <form>
-        <div class="form-group">
-          <label for="theirname">Their Name</label>
-          <input id="theirname" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="occasion">Occasion</label>
-          <input id="occasion" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="adjective">Descriptive Adjective</label>
-          <input id="adjective" class="form-control" type="text">
-        </div>
-        <div class="form-group">
-          <label for="yourname">Your Name</label>
-          <input id="yourname" class="form-control" type="text">
-        </div>
+      <h1>Fill in the blanks to draft your letter of well-wishes!</h1>
+      <div id="blanks">
+        <form>
+          <div class="form-group">
+            <label for="theirname">Their Name</label>
+            <input id="theirname" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="occasion">Occasion</label>
+            <input id="occasion" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="adjective">Descriptive Adjective</label>
+            <input id="adjective" class="form-control" type="text">
+          </div>
+          <div class="form-group">
+            <label for="yourname">Your Name</label>
+            <input id="yourname" class="form-control" type="text">
+          </div>
 
-        <button type="submit" class="btn">Generate the letter</button>
-      </form>
+          <button type="submit" class="btn">Generate the letter</button>
+        </form>
+      </div>
+
+
+    <div id="letter">
+      <h1>Special Occasion Letter</h1>
+      <p>Dear <span class="theirname"></span>,</p>
+      <p>This letter is to congratulate you on the occasion of your <span class="occasion"></span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <p>I would like to sincerely wish that <span class="theirname"></span> have a very <span class="adjective"></span> <span class="occasion"></span>. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <p>Sincerely,</p>
+      <br><br><br>
+      <p>The honorable <span class="yourname"></span></p>
     </div>
+  </div>
 
 
   </body>
